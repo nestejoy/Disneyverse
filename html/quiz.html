@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Disneyverse - Quiz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="../images/D.png">
+  <link rel="stylesheet" href="../css/quiz.css">
+</head>
+<body>
+  <nav>
+    <div class="navcontent">
+      <logo>
+        <p class="logotext1 logotext">Disney</p>
+        <p class="logotext2 logotext">verse</p>
+      </logo>
+    </div>
+    <div class="navcontent">
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a class="active quiz">Quiz</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </div>
+    <div class="navcontent">
+      <div class="input-wrapper">
+        <i class="icon"><img src="../images/search.gif" width="30px" height="30px"></i>
+        <select id="searchCharacterName">
+          <option value="" hidden selected>Search</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <h1 id="title">Welcome to our Mini-Disney Quiz!</h1>
+      <h4 id="instructions">Can you guess the Disney Character? Choose your difficulty.</h4>
+
+      <div id="difficulty-section" class="difficulty-buttons">
+        <button onclick="setDifficulty('easy')" class="btn">Easy<br><small>10 questions | ∞ lives</small></button>
+        <button onclick="setDifficulty('intermediate')" class="btn">Intermediate<br><small>20 questions | 5 lives</small></button>
+        <button onclick="setDifficulty('advanced')" class="btn">Advanced<br><small>30 questions | 3 lives</small></button>
+        <button onclick="setDifficulty('hard')" class="btn">Hard<br><small>40 questions | 1 life</small></button>
+      </div>
+
+      <div id="leaderboard-button-section">
+        <button onclick="showLeaderboard()" class="btn">🏆 View Leaderboard</button>
+      </div>
+
+      <div id="quiz-container" class="quiz-container"></div>
+
+      <div id="score-container" class="score-container">
+        <h3>Your Score: <span id="score">0</span></h3>
+      </div>
+    </div>
+  </main>
+
+  <script src="../js/quiz.js"></script>
+</body>
+</html>

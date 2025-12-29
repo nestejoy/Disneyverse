@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Gamja+Flower&family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  background-color: #dfe9ef;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  color: #31393d;
+  overflow: hidden;
+}
+
+nav {
+  width: 1100px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+logo {
+  display: flex;
+}
+
+.logotext1 {
+  font-family: "Mr Dafoe", cursive;
+  font-size: 35px;
+}
+
+.logotext2 {
+  font-family: "Gamja Flower", sans-serif;
+  font-size: 35px;
+}
+
+.logotext {
+  padding: 0 3px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: white;
+  background-color: #12194A;
+  border-radius: 5px;
+}
+
+.active {
+  border-bottom: 3px solid #12194A;
+}
+
+
+
+/* Search Select */
+.icon {
+  position: absolute;
+  padding: 6.5px 15px;
+  pointer-events: none;
+}
+
+select {
+  appearance: none;
+  border: 1px solid #adb5bd;
+  background-color: #f5f3f4;
+  border-radius: 20px;
+  height: 40px;
+  width: 250px;
+  padding: 0 55px;
+}
+
+select:hover {
+  border-color: #12194A;
+}
+
+main {
+  width: 1100px;
+  height: 450px;
+  background-color: white;
+  border-radius: 16px;
+  padding: 30px 20px;
+  box-shadow: 0 6px 20px rgba(202, 208, 216, 0.15);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Gamja Flower", sans-serif;
+  font-size: 60px;
+  color: black;
+  margin: 10px 0;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+  font-weight: 500;
+  color: black;
+  margin: 5px 0 20px;
+}
+
+/* Buttons */
+.difficulty-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: .5rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#leaderboard-button-section {
+  text-align: center;
+  margin: 20px 0;
+}
+
+button {
+  margin: 10px;
+  width: 250px;
+  height: auto;
+  min-height: 50px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: "Poppins", sans-serif;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+              7px 7px 20px 0px rgba(0,0,0,.1),
+              4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+button small {
+  font-size: 11px;
+  opacity: 0.9;
+}
+
+.btn {
+  background: rgb(96,9,240);
+  background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%);
+  border: none;
+}
+
+.btn:before {
+  height: 0%;
+  width: 2px;
+}
+
+.btn:hover {
+  box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .5),
+              inset -4px -4px 6px 0 rgba(255,255,255,.2),
+              inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}
+
+
+.quiz-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 350px;
+}
+
+.imageContainer {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageContainer img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.questionContainer {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Choices - Centered */
+.choices {
+  list-style: none;
+  padding: 15px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 350px;
+}
+
+.choices li {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 5px 0;
+  background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%);
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.choices li:hover {
+  box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .5),
+              inset -4px -4px 6px 0 rgba(255,255,255,.2),
+              inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}
+
+.feedback {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Score Display */
+.score-container {
+  display: none;
+  text-align: center;
+}
+
+.scoreDisplay {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+}
+
+.scoreDisplay h2 {
+  margin: 5px 0;
+}
+
+.scoreDisplay h3 {
+  margin: 3px 0;
+}
+
+.scoreDisplay p {
+  margin: 3px 0;
+}
+
+/* Button Row - Side by Side */
+.button-row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Name Input */
+.name-input-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 8px 0;
+}
+
+.player-name-input {
+  padding: 10px 20px;
+  border: 2px solid #6009f0;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 250px;
+}
+
+.player-name-input:focus {
+  border-color: #8105f0;
+  box-shadow: 0 0 5px rgba(129, 5, 240, 0.5);
+}
+
+/* Leaderboard */
+.leaderboard-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.leaderboard-table {
+  width: 100%;
+  max-width: 800px;
+  border-collapse: collapse;
+  margin: 10px 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.leaderboard-table thead {
+  background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%);
+  color: white;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.leaderboard-table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+.leaderboard-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Custom Modal Popup */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.modal-content {
+  background: white;
+  border-radius: 16px;
+  padding: 30px 40px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(96, 9, 240, 0.3);
+  animation: slideIn 0.3s ease;
+  max-width: 400px;
+  width: 90%;
+}
+
+.modal-icon {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+.modal-title {
+  font-family: "Gamja Flower", sans-serif;
+  font-size: 28px;
+  color: #31393d;
+  margin: 10px 0;
+}
+
+.modal-message {
+  font-size: 16px;
+  color: #666;
+  margin: 10px 0 20px;
+}
+
+.modal-btn {
+  background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(96, 9, 240, 0.3);
+}
+
+.modal-btn:hover {
+  box-shadow: 0 6px 20px rgba(96, 9, 240, 0.5);
+  transform: translateY(-2px);
+}
+
+.modal-error .modal-icon {
+  color: #e74c3c;
+}
+
+.modal-success .modal-icon {
+  color: #6009f0;
+}

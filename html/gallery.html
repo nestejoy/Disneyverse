@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Disneyverse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="../images/D.png">
+  <link rel="stylesheet" href="../css/gallery.css">
+</head>
+<body>
+    <nav>
+        <div class="navcontent">
+            <logo>
+                <p class="logotext1 logotext">Disney</p>
+                <p class="logotext2 logotext">verse </p>
+            </logo>
+        </div>
+        <div class="navcontent">
+            <ul class="nav-links">
+                <li><a href="../index.html"> Home </a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a class="active ">Gallery</a></li>
+            </ul>
+        </div>
+        <div class="navcontent">
+            <div class="input-wrapper">
+            <i class="icon"><img src="../images/search.gif" width="30px" height="30px"></i>
+            <select id="searchCharacterName">
+                <option value="" hidden selected>Search</option>
+            </select>
+        </div>
+    </nav> 
+
+<main>
+  <div class="pagination">
+    <span id="current-page" class="page-display">Page 1</span>
+    <!-- Page Search -->
+    <button id="prev-page" class="arrow-button">←</button>
+    <div class="page-buttons">
+        <button class="page-button" data-page="25">25</button>
+        <button class="page-button" data-page="50">50</button>
+        <button class="page-button" data-page="75">75</button>
+        <button class="page-button" data-page="100">100</button>
+        <button class="page-button" data-page="125">125</button>
+        <button class="page-button" data-page="150">150</button>
+    </div>
+    <button id="next-page" class="arrow-button">→</button>
+</div>
+
+  <div class="scroll-wrapper">
+    <div id="character-list" class="scroll-inner">
+    </div>
+  </div>
+   
+</main>
+<script src="../js/gallery.js"></script>
+
+</body>
+</html>

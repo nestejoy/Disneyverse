@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Disneyverse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="images/D.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="navcontent">
+            <logo>
+                <p class="logotext1 logotext">Disney</p>
+                <p class="logotext2 logotext">verse </p>
+            </logo>
+        </div>
+        <div class="navcontent">
+            <ul class="nav-links">
+                <li><a class="active">Home</a></li>
+                <li><a href="html/quiz.html" class="quiz">Quiz</a></li>
+                <li><a href="html/gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+        <div class="navcontent">
+            <div class="input-wrapper">
+            <i class="icon"><img src="images/search.gif" width="30px" height="30px"></i>
+            <select id="searchCharacterName">
+                <option value="" hidden selected>Search</option>
+            </select>
+            </div>
+        </div>
+    </nav> 
+
+<main>
+    <div class="scroll-wrapper">
+        <div class="scroll-filler"></div>
+        <div class="scroll">
+            <div id="character-list" class="scroll-inner">
+                <a href="#" class="scroll-item">
+                    <div class="image-container">
+                        <img src="" alt="Character Image">
+                    </div>
+                    <h2></h2>
+                    <span class="scroll-item-tvShow">Character's TV Show</span>
+                </a>
+                <a href="#" class="scroll-item">
+                     <div class="image-container">
+                        <img src="" alt="Character Image">
+                    </div>
+                    <h2></h2>
+                    <span class="scroll-item-tvShow">Character's TV Show</span>
+                </a>
+                <a href="#" class="scroll-item">
+                     <div class="image-container">
+                        <img src="" alt="Character Image">
+                    </div>
+                    <h2></h2>
+                    <span class="scroll-item-tvShow">Character's TV Show</span>
+                </a>
+                <a href="#" class="scroll-item">
+                     <div class="image-container">
+                        <img src="" alt="Character Image">
+                    </div>
+                    <h2></h2>
+                    <span class="scroll-item-tvShow">Character's TV Show</span>
+                </a>
+                <a href="#" class="scroll-item">
+                     <div class="image-container">
+                        <img src="" alt="Character Image">
+                    </div>
+                    <h2></h2>
+                    <span class="scroll-item-tvShow">Character's TV Show</span>
+                </a>
+                <a href="#" class="scroll-item">
+                     <div class="image-container">
+                        <img src="" alt="Character Image">
+                    </div>
+                    <h2></h2>
+                    <span class="scroll-item-tvShow">Character's TV Show</span>
+                </a>
+                <a href="#" class="scroll-item">
+                     <div class="image-container">
+                        <img src="" alt="Character Image">
+                    </div>
+                    <h2></h2>
+                    <span class="scroll-item-tvShow">Character's TV Show</span>
+                </a>
+                 <a href="#" class="scroll-item">
+                     <div class="image-container">
+                        <img src="" alt="Character Image">
+                    </div>
+                    <h2></h2>
+                    <span class="scroll-item-tvShow">Character's TV Show</span>
+                </a>
+                <a href="#" class="scroll-item">
+                     <div class="image-container">
+                        <img src="" alt="Character Image">
+                    </div>
+                    <h2></h2>
+                    <span class="scroll-item-tvShow">Character's TV Show</span>
+                </a>
+
+               
+            </div>
+        </div>
+    </div>
+    <div class="scroll-position-wrapper">
+        <button class="scroll-btn prev" onclick="prevBtn()" disabled></button>
+        <div class="scroll-position">
+            <div class="scroll-position-inner"></div>
+        </div>
+        <button class="scroll-btn next" onclick="nextBtn()"></button>
+    </div>
+</main>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js'></script>
+ <script src="js/script.js"></script>
+</body>
+</html>
